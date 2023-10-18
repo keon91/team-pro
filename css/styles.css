@@ -1,3 +1,29 @@
+:root {
+  --color-brand:#5F0A61;
+  --color-brand-second:#ffffff;
+  --color-background:#FAFAFA;
+  --color-title:#2E363E;
+  --color-text:#434B53;
+  --color-title-second: #000000;
+  --color-text-second: #A6AEB6;
+  --color-placeholder: #BFBFBF;
+  --color-border:#00000052;
+  --color-checkbox:#5F0A6100;
+  --color-checkbox-second:#CACACA;
+  --color-checkbox-text:#7E868E;
+  --color-backdrop:#0000008F;
+  --color-decoration:#D8D8D8;
+}
+/*____________BODY___________________*/
+body {
+  font-family: 'Inter','Montserrat','Poppins', sans-serif;
+  color: var(--color-title);
+  background-color: var(--color-brand-second);
+  font-size: 21px; 
+  font-weight: 400;
+}
+
+
 /* Стилі для обнулення верхніх відступів у елементів */
 h1,
 h2,
@@ -29,8 +55,19 @@ img {
 }
 
 /* Властивості для обнулення курсиву address */
-
 address {
   font-style: normal;
 
 }
+
+.section {
+  padding: 175px 0;
+  width: 100%;
+}
+
+.container { 
+max-width: 100%;
+padding: 0 15px ;
+margin: 0 auto;
+} 
+
