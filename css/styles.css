@@ -1,28 +1,27 @@
 :root {
-  --color-brand:#5F0A61;
-  --color-brand-second:#ffffff;
-  --color-background:#FAFAFA;
-  --color-title:#2E363E;
-  --color-text:#434B53;
+  --color-brand: #5f0a61;
+  --color-brand-second: #ffffff;
+  --color-background: #fafafa;
+  --color-title: #2e363e;
+  --color-text: #434b53;
   --color-title-second: #000000;
-  --color-text-second: #A6AEB6;
-  --color-placeholder: #BFBFBF;
-  --color-border:#00000052;
-  --color-checkbox:#5F0A6100;
-  --color-checkbox-second:#CACACA;
-  --color-checkbox-text:#7E868E;
-  --color-backdrop:#0000008F;
-  --color-decoration:#D8D8D8;
+  --color-text-second: #a6aeb6;
+  --color-placeholder: #bfbfbf;
+  --color-border: #00000052;
+  --color-checkbox: #5f0a6100;
+  --color-checkbox-second: #cacaca;
+  --color-checkbox-text: #7e868e;
+  --color-backdrop: #0000008f;
+  --color-decoration: #d8d8d8;
 }
 /*____________BODY___________________*/
 body {
-  font-family: 'Inter','Montserrat','Poppins', sans-serif;
+  font-family: 'Inter', 'Montserrat', 'Poppins', sans-serif;
   color: var(--color-title);
   background-color: var(--color-brand-second);
-  font-size: 21px; 
+  font-size: 21px;
   font-weight: 400;
 }
-
 
 /* Стилі для обнулення верхніх відступів у елементів */
 h1,
@@ -57,7 +56,6 @@ img {
 /* Властивості для обнулення курсиву address */
 address {
   font-style: normal;
-
 }
 
 .section {
@@ -65,11 +63,61 @@ address {
   width: 100%;
 }
 
-.container { 
-max-width: 100%;
-padding: 0 15px ;
-margin: 0 auto;
-} 
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ================FOOTER============== */
+
+.footer {
+  background-color: #5f0a61;
+  padding: 90px 0;
+}
+.footer-container {
+  display: flex;
+  max-width: 1440px;
+}
+.footer-logo {
+  margin-right: 288px;
+}
+.footer-logo-link {
+  color: #fff;
+  font-family: Reem Kufi;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.footer-soc {
+  margin-right: 202px;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footer-soc-item {
+}
+.footel-soc-link {
+}
+.footer-soc-icon {
+  fill: #fff;
+}
+.footer-tel {
+}
+.footer-tel-link {
+  color: #fff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* ================FOOTER============== */
 
 /*----------MODAL----------*/
 
@@ -83,7 +131,8 @@ margin: 0 auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -93,16 +142,16 @@ margin: 0 auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 76px 67px 75px 50px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-line::after {
-  content: "";
+  content: '';
   width: 143px;
   height: 2px;
-  background: #D8D8D8;
+  background: #d8d8d8;
   position: absolute;
   top: 89px;
   left: 52px;
@@ -129,7 +178,7 @@ margin: 0 auto;
 }
 
 .modal-title span {
-  color: #5F0A61;
+  color: #5f0a61;
 }
 
 .modal-p {
@@ -137,7 +186,7 @@ margin: 0 auto;
   text-align: justify;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.55; 
+  line-height: 1.55;
   letter-spacing: 0.03em;
   margin-bottom: 23px;
 }
@@ -156,14 +205,14 @@ margin: 0 auto;
   line-height: 1.55;
   letter-spacing: 0.03em;
   border-radius: 5px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   background: transparent;
   padding-left: 21px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input::placeholder {
-  color: #BFBFBF;
+  color: #bfbfbf;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.55;
@@ -172,14 +221,14 @@ margin: 0 auto;
 
 .input:focus,
 .input:hover {
-  border-color: #8E0292;
+  border-color: #8e0292;
 }
 
 .textarea {
   width: 533px;
   height: 149px;
   border-radius: 5px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   background: transparent;
   color: #000;
   font-size: 22px;
@@ -194,7 +243,7 @@ margin: 0 auto;
 }
 
 .textarea::placeholder {
-  color: #BFBFBF;
+  color: #bfbfbf;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.55;
@@ -203,18 +252,18 @@ margin: 0 auto;
 
 .textarea:focus,
 .textarea:hover {
-  border-color: #8E0292;
+  border-color: #8e0292;
 }
 
 .modal-button {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.03em;
   border-radius: 5px;
-  background: #5F0A61;
+  background: #5f0a61;
   padding: 12px 24px 17px 24px;
   margin-left: 176px;
   border: none;
@@ -223,7 +272,7 @@ margin: 0 auto;
 
 .modal-button:hover,
 .modal-button:focus {
-  background-color: #8E0292;
+  background-color: #8e0292;
 }
 
 .is-open {
