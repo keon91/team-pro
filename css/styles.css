@@ -163,7 +163,7 @@ margin: 0 auto;
 }
 
 .input::placeholder {
-  color: #000;
+  color: #BFBFBF;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.55;
@@ -194,7 +194,7 @@ margin: 0 auto;
 }
 
 .textarea::placeholder {
-  color: #000;
+  color: #BFBFBF;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.55;
